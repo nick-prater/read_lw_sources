@@ -470,8 +470,8 @@ sub parse_section {
         my $operand = $operation[1];
 
         if ($opcode eq 'ADVV') {
-            # I think this is some kind of version number
-            # maybe for the protocol, maybe some kind of sequence?
+            # A sequence number, which is incremented by 1 each time there
+            # is a change in the channel configuration for a node.
             warn "ADVV: $operand\n";
         }
         elsif ($opcode eq 'ATRN') {
